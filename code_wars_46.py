@@ -1,2 +1,6 @@
 def hamming_weight(x):
-    pass
+    converted = bin(x)[2:]
+    return converted.count("1")
+
+x = int(input())
+print(hamming_weight(x))
