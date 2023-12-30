@@ -1,6 +1,10 @@
-def remove_every_other(my_list):
-    # Your code here!
-    return my_list[::2]
+def invert(lst):
+    for i in lst:
+        if int(i) > 0:
+            i *= -1
+        else:
+            i *= 1
+    return lst
 
 a = input()
-print(remove_every_other(a))
+print(invert(a))
