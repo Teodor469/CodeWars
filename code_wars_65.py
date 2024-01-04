@@ -1,6 +1,6 @@
-def find_average(numbers):
-    if not numbers:
-        return 0
-
-    average = sum(numbers) / len(numbers)
-    return average
+def get_middle(s):
+    length = len(s)
+    if length % 2 == 1:
+        return s[length // 2]
+    else:
+        return s[length // 2 - 1:length // 2 + 1]
